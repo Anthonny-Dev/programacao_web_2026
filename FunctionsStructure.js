@@ -14,7 +14,6 @@ function somar(a, b){
     console.log(soma);
 }
 
-
 somar(10, 5);
 somar(15, 7);
 somar(1, 5);

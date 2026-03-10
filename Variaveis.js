@@ -71,3 +71,23 @@ function verificarNumero(A){
 
 
 verificarNumero(4);
+
+// função para verificar imc
+function imc(peso, altura){
+    calculoimc = peso / (altura * altura);
+
+    if (calculoimc < 18.5){
+        console.log("Baixo peso");
+
+    }else if (calculoimc > 18.5 && calculoimc <= 24.9){
+        console.log("peso normal");
+    }else if (calculoimc > 24.9 && calculoimc <= 29.9){
+        console.log("excesso de peso");
+    }else if (calculoimc > 29.9 && calculoimc < 35){
+        console.log("obesidade");
+    }else if(calculoimc >= 35){
+        console.log("obesidade extrema");
+    }
+}
+
+imc(60,1.71);
